@@ -7,9 +7,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="student")
+@Table(name="students")
 public class Student implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -32,6 +32,5 @@ public class Student implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 	
 }
