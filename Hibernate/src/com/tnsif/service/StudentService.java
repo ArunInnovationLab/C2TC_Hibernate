@@ -4,7 +4,7 @@ import com.tnsif.entities.Student;
 
 public interface StudentService {
 
-	public abstract Student getStudentById(int id);
+	public abstract Student findStudentById(int id);
 	
 	public abstract void addStudent(Student student);
 	

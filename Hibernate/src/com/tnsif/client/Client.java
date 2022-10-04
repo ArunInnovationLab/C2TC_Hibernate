@@ -9,12 +9,27 @@ public class Client {
 		
 		StudentService service = new StudentServiceImpl();
 		
-		//Create operation
 		Student student = new Student();
-		student.setStudentId(1);
-		student.setName("Sachin");
+		
+		//Create operation
+		student.setStudentId(2);
+		student.setName("Rahul");
 		service.addStudent(student);
 		
-		System.out.println("Student added. ");
+		//Delete operation
+		student = service.findStudentById(1);
+		service.removeStudent(student);
+		System.out.println("Student deleted .");
+		
+		//Update operation
+		student = service.findStudentById(2);
+		student.setName("Rahul Kumar");
+		service.updateStudent(student);
+		System.out.println("Student updated");
+		
+		//Retrieve operation
+		student = service.findStudentById(2);
+		System.out.println("ID: "+student.getStudentId());
+		System.out.println("Name: "+student.getName());
 	}
 }

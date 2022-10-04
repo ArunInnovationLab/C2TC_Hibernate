@@ -13,7 +13,8 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
-	public Student getStudentById(int id) {
+	public Student findStudentById(int id) {
+		//no need of transaction, as it's an read operation
 		Student student = dao.getStudentById(id);
 		return student;
 	}
