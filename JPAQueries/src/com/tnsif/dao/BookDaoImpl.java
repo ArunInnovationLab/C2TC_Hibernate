@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
-
 import com.tnsif.entities.Book;
 
 public class BookDaoImpl implements BookDao {
@@ -23,15 +22,15 @@ public class BookDaoImpl implements BookDao {
 
 	@Override
 	public List<Book> getBookByTitle(String title) {
-		String qStr = "SELECT books FROM Book books WHERE books.title LIKE: btitle";
+		String qStr = "SELECT book FROM Book book WHERE book.title LIKE: ptitle";
 		TypedQuery<Book> query = entityManager.createQuery(qStr, Book.class);
-		query.setParameter("btitle", "%"+title+"%");
+		query.setParameter("ptitle", "%"+title+"%");
 		return query.getResultList();
 	}
 
 	@Override
 	public Long getBookCount() {
-		String qStr = "SELECT COUNT(books.id) FROM Book books";
+		String qStr = "SELECT COUNT(book.id) FROM Book book";
 		TypedQuery<Long> query = entityManager.createQuery(qStr, Long.class);
 		Long count = query.getSingleResult();
 		return count;
@@ -39,20 +38,28 @@ public class BookDaoImpl implements BookDao {
 
 	@Override
 	public List<Book> getAuthorBooks(String author) {
-		// TODO Auto-generated method stub
-		return null;
+		String qStr = "SELECT book FROM Book book WHERE book.author=:pauthor";
+		TypedQuery<Book> query = entityManager.createQuery(qStr, Book.class);
+		query.setParameter("pauthor",author);
+		List<Book> bookList= query.getResultList();
+		return bookList;
 	}
 
 	@Override
 	public List<Book> getAllBooks() {
-		// TODO Auto-generated method stub
-		return null;
+		TypedQuery<Book> query = entityManager.createNamedQuery("getAllBooks", Book.class);
+		List<Book> bookList = query.getResultList();
+		return bookList;
 	}
 
 	@Override
 	public List<Book> getBookInPriceRange(double low, double high) {
-		// TODO Auto-generated method stub
-		return null;
+		String qStr = "SELECT b from Book b WHERE b.price between :low and :high";
+		TypedQuery<Book> query = entityManager.createQuery(qStr, Book.class);
+		query.setParameter("low", low);
+		query.setParameter("high", high);
+		List<Book> bookList = query.getResultList();
+		return bookList;
 	}
 
 }

@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "books")
-@NamedQueries(@NamedQuery(name = "getAllBooks", query = "SELECT books FROM Book books"))
+@NamedQueries(@NamedQuery(name = "getAllBooks", query = "SELECT book FROM Book book"))
 public class Book implements Serializable{
 
 	/**

@@ -35,19 +35,19 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public List<Book> getAuthorBooks(String author) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getAuthorBooks(author);
 	}
 
 	@Override
 	public List<Book> getAllBooks() {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getAllBooks();
 	}
 
 	@Override
 	public List<Book> getBooksInPriceRange(double low, double high) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getBookInPriceRange(low, high);
 	}
 
 }
