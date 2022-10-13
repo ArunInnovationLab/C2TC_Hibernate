@@ -11,5 +11,23 @@
 			<attribute name="owner.project.facets" value="jpt.jpa"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/byte-buddy-1.8.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/classmate-1.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/hibernate-commons-annotations-5.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/hibernate-core-5.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/jandex-2.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/javassist-3.23.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/jaxb-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/jsp-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/protobuf-java-3.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/servlet-api-2.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
