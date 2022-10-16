@@ -18,6 +18,5 @@ public class Manager extends Employee{
 	public void setDepartmentName(String departmentName) {
 		this.departmentName = departmentName;
 	}
-	
-	
+		
 }

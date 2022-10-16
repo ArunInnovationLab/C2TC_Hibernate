@@ -18,7 +18,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Table(name="employee")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(discriminatorType = DiscriminatorType.STRING, name="emp_type" )
+@DiscriminatorColumn(name="emp_type",discriminatorType = DiscriminatorType.STRING )
 @DiscriminatorValue(value="EMP")
 public class Employee implements Serializable{
 	

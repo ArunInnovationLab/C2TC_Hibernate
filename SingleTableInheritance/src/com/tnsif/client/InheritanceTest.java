@@ -32,11 +32,6 @@ public class InheritanceTest {
 		
 		System.out.println("Added one employee and manager to database.");
 		
-		entityManager.close();
-		
-		factory.close();
-		
-		
 	}
 
 }

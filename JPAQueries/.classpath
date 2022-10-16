@@ -6,11 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate">
-		<attributes>
-			<attribute name="owner.project.facets" value="jpt.jpa"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/byte-buddy-1.8.17.jar"/>
 	<classpathentry kind="lib" path="C:/Users/arunk/OneDrive/Desktop/Hibernate-Connector/classmate-1.3.4.jar"/>
