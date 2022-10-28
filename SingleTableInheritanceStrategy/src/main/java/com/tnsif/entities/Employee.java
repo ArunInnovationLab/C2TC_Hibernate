@@ -12,19 +12,19 @@ import javax.persistence.Table;
 @Table(name = "employee_table")
 @DiscriminatorValue(value = "employee_type")
 public class Employee extends Person{
-	
+
 	@Column(name="salary",columnDefinition="DECIMAL(7,2)")
 	private Double salary;
-	
+
 	@Column(name="date_of_joining")
 	private LocalDate doj;
-	
+
 	@Column(name="dept_name",length=30)
 	private String deptName;
-	
+
 	@Column(name="bonus",precision=6,scale=3)
 	private BigDecimal bonus;
-	
+
 	@Column(name="email",length=30,unique=true)
 	private String email;
 
@@ -67,5 +67,5 @@ public class Employee extends Person{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 }

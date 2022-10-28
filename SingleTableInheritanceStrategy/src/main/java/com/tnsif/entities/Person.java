@@ -23,10 +23,10 @@ public class Person {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private int id;
-	
+
 	@Column(name = "name", length = 100)
 	private String name;
-	
+
 	@Column(name = "gender", length = 10)
 	private String gender;
 
@@ -54,6 +54,6 @@ public class Person {
 		this.gender = gender;
 	}
 
-	
-	
+
+
 }

@@ -12,13 +12,13 @@ public class Student extends Person {
 
 	@Column(name="school_name",length=50)
 	private String schoolName;
-	
+
 	@Column(name="fee")
 	private float fee;
-	
+
 	@Column(name="section_name",length=50)
 	private String sectionName;
-	
+
 	public String getSchoolName() {
 		return schoolName;
 	}
